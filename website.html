@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+            color: black;
+        }
+
+        header {
+            background-color: #50b05e; 
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            border-bottom: 2px solid black; 
+            padding-bottom: 10px;
+            color: black; 
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Project and Blog Post Styles */
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #84CEEB; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5AB9EA; 
+        }
+
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.1em;
+        }
+
+        #contact a {
+            color: #5680E9;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #67a767; 
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! Iam Sudaroli,student from Kumaraguru College of Technology.Iam a skilled software professional and a person with a lot of interest in learning new things. An extrovert person with huge communication skills, easily  mingle with the group and a team man. Sound knowledge in basics of Java, C, python and My SQL. Completed two projects. </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Train Ticket Management System:</h3>
+                <ul class="spaced-list">
+                    <li>Developed and maintained web-based 
+                        applications for booking train tickets online, makes the user to reduce the time for 
+                        booking than in physical mode. Shows availability of trains and their respective time 
+                        which is helpful for the user to make a desired plan.
+                    </li>
+                    
+                    <li>
+                        Developed with Tkinter as frontend and MySQL as database.
+                    </li>
+                
+                </ul>
+                
+            </div>
+            <div class="project">
+                <h3>Cricket Scorer App:</h3>
+                <ul class="spaced-list">
+                    <li>Web based application used for scoring in a cricket match. 
+                        Also allows the players to view their own statistics for self improvement or to have a 
+                        analysis on a player.My passion towards cricket made me to do this.                       
+                    </li>
+                    <li>
+                        Developed with flutter and Mysql.
+                    </li>
+                
+                </ul>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Cricketer - Kumaraguru College of Technology</h3>
+                <p id="post1">"Self-belief and hardwork will always earn you success." - Virat Kohli 
+                    <br><br>
+                    Champions of Zone 11 in Anna University Cricket Tournament.
+                    <br><br>
+                    Runners up in (Inter Zone)State Level Anna University Cricket Tournament. 
+                    <br><br>
+                    Event organizer for Department of Information Technology in Yugam 2023&24. 
+                    <br><br>
+                    Always beleives in team work more than done by a single person.
+                    <br><br>
+                    Mahatma Gandhi Scholarship Awardee for two consecutive years,provided by Kumaraguru College of Technology.
+                    <br><br>
+                    Smart working guy,needs to achieve a lot in the future and always eager to improve skills.
+                </p>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:sudaroli224@gmail.com">sudaroli224@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sudaroli-gopal-7b0818225/" target="_blank">sudaroli-gopal</a></p>
+            <p>GitHub: <a href="https://github.com/Sudar164" target="_blank">Sudar164</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sudaroli. All rights reserved.</p>
+    </footer>
+</body>
+</html>
